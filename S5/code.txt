@@ -1,0 +1,20 @@
+
+use world;
+select * from city;
+select name from city where countrycode like 'A%';
+select countrycode from city where countrycode like 'A%';
+select countrycode from city where countrycode like '__T%';
+select countrycode from city where countrycode like '_A%';
+use qadbt;
+select * from employeeinfo order by name;
+select * from employeeinfo order by id;
+select * from employeeinfo order by id desc;
+use demo;
+select * from company;
+select count(branch) from company;
+select Max(employees) from company;
+select avg(employees) from company;
+select sum(employees) from company;
+select branch,sum(employees) from company group by branch;
+select name, sum(employees) from company group by name;
+select branch,sum(employees) from company group by branch having branch='canada' or branch = 'india';

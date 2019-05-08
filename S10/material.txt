@@ -1,0 +1,22 @@
+SQL Injection :
+`
+SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker).
+What an attacker can do?
+* ByPassing Logins
+* Accessing secret data
+* Modifying contents of website
+* Shutting down the My SQL server
+Before we see what SQL Injection is. We should know what SQL and Database are.
+Database:
+Database is collection of data. In website point of view, database is used for storing user ids,passwords,web page details and more.
+Some List of Database are:
+* DB servers,
+* MySQL(Open source), 
+* MSSQL, 
+* MS-ACCESS, 
+* Oracle, 
+* Postgre SQL(open source), 
+* SQLite,
+SQL:
+Structured Query Language is Known as SQL. In order to communicate with the Database ,we are using SQL query. We are querying the database so it is called as Query language.
+

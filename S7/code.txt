@@ -1,0 +1,9 @@
+#view
+use demo;
+create view google_info as
+select * from company where name='google';
+select * from google_info;
+#which company have more than average Employees
+create view Avg_company as
+select name,employees from company group by name having employees > (select avg(employees) from company);
+select * from Avg_company;

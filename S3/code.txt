@@ -1,0 +1,13 @@
+#alter table Employeeinfo modify gender varchar(20);
+alter table Employeeinfo drop gender;
+describe Employeeinfo;
+alter table Employeeinfo add gender varchar(10);
+select * from Employeeinfo;
+update Employeeinfo set gender='female' where name ='sam';
+update Employeeinfo set gender='male' where name ='ram';
+update Employeeinfo set gender='male' where name ='tam';
+update Employeeinfo set gender='male' where name ='nam';
+delete from Employeeinfo where name ='lam';
+create database sample;
+use sample;
+drop database sample;

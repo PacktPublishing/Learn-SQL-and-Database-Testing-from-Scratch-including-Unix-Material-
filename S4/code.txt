@@ -1,0 +1,15 @@
+
+# Unique Names in EmployeeTable
+select distinct name from employeeinfo;
+#get the employees name of newyork
+select name from employeeinfo where location='newyork';
+#get the employees name of newyork where there age should be more than 23
+select name from employeeinfo where location='newyork' and age>23;
+#get the employees name of Florida where there age should be less than 23 or location is from charlotte
+select name from employeeinfo where (location='florida' and age<23) or location='charlotte';
+select name from employeeinfo where id=1 or location ='florida';
+#Print the employnames whose age should be between 22 and 25
+select name from employeeinfo where age in(22,23,24,25);
+select name from employeeinfo where location in('florida','newyork');
+#print the emplyeenames whose id lies between 1 and 1000
+select name from employeeinfo where id between 1 and 1000;

@@ -1,0 +1,9 @@
+
+select name,age from citizens where name=(select name from citizenloc where location='chicago');
+select name,exp from citizens where name=(select name from citizenloc where location='chicago');
+select name,age from citizens where name in(select name from citizenloc where location='california');
+select name,location from citizenloc where name =(select name from citizens where age=41);
+use demo;
+select c.name,cl.location,c.age from citizens as c join citizenloc as cl on c.name=cl.name where cl.location='california';
+select c.name,e.year,min(c.employees) from company as c join established as e on c.name=e.name group by c.name;
+select c.name,e.year,sum(c.employees) from company as c join established as e on c.name=e.name group by c.name having e.year > 1990;
